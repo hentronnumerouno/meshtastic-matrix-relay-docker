@@ -1,7 +1,0 @@
-.pyenv
-.vscode
-config.yaml
-custom_plugins/*
-meshtastic.sqlite
-__pycache__/
-./plugins/__pycache__/

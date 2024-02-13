@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  sierramesh:
+    image: meshtastic-matrix-relay-docker:latest
+    container_name: meshtastic-matrix-relay-docker
+    working_dir: /app
+    volumes:
+      - ./meshtastic-matrix-relay/:/app/
+    restart: unless-stopped
+    ports:
+      - "1394:1394"
+      - "8000:8000"
